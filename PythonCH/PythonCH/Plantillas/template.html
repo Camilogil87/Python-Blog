@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>mi nombre es: {{usuario}}</h1>
+    <h3>la fecha actual es: {{fecha_actual}}</h3>
+    <h2>Que no de mucha carcel</h2>
+    <p>Sornero</p>
+    <h4>Las notas de la U son:{{notas}}</h4>
+    <p>
+    {% for n in notas %}
+        {% if n < 4 %}
+           <p style="color:red"> NOTA MALA {{n}}</p>
+        {%else%} <p style="color:blue"> NOTA BUENA {{n}}</p>
+        {%endif%}
+           <br>
+
+    {% endfor %}
+    <p>
+
+    <img style='max-width: 2000px;' src="https://images.alphacoders.com/538/thumb-1920-538159.jpg">
+</body>
+</html>
